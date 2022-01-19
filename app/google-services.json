@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "172256777056",
+    "firebase_url": "https://hostelua-847fc-default-rtdb.firebaseio.com",
+    "project_id": "hostelua-847fc",
+    "storage_bucket": "hostelua-847fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172256777056:android:022887d20bea68ca3c4405",
+        "android_client_info": {
+          "package_name": "com.example.hostelua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172256777056-9u7ojtanmco425lbvtcl58tcedut5vsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_zsCT6wj9_VNkVH1u6k3GizY0ZwwjTTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172256777056-9u7ojtanmco425lbvtcl58tcedut5vsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

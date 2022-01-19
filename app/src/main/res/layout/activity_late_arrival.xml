@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LateArrivalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameL"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:hint="Name"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_classl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class/Year/Branch"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/nameL" />
+
+        <Spinner
+            android:id="@+id/sp_classl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/stream"
+            android:layout_below="@+id/tv_classl" />
+
+        <Spinner
+            android:id="@+id/sp_yearl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/year"
+            android:layout_below="@+id/tv_classl"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/sp_classl"/>
+
+        <Spinner
+            android:id="@+id/sp_branchl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/branch"
+            android:layout_below="@+id/tv_classl"
+            android:layout_toRightOf="@+id/sp_yearl"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/sp_classl"
+            android:hint="USN"
+            android:id="@+id/usnl"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hostel_rooml"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/usnl"
+            android:hint="Hostel Name and Room no. format(MH1/64)"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datell"
+            android:inputType="time"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/hostel_rooml"
+            android:hint="Time of return"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daterl"
+            android:inputType="date"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/datell"
+            android:hint="Date of return"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_nol"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/daterl"
+            android:hint="Mobile Number"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/moile_nopl"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/mobile_nol"
+            android:hint="Mobile Numer of Parent/Guardian"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:hint="Reason of late arrival"
+            android:maxLength="50"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:id="@+id/meditrl"
+            android:layout_below="@+id/moile_nopl"
+            android:scrollbars="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="submit"
+            android:id="@+id/submit_late"
+            android:layout_below="@+id/meditrl"/>
+
+    </RelativeLayout>
+</ScrollView>

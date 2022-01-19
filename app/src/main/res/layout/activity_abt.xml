@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AbtActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.M.S College of Engineering has an extensive campus spread in nearly 15 acres of land. The area consists of several buildings - old and modern, with well laid roads, play grounds and lawns. Apart from this, the hostel complex on the southern side of the college campus consists various hostel blocks. The BMSET Hostel is a place to grow and evolve one’s personality. Academics indeed is one of the area of primary concern of our management as we are among the pioneers of education in our Country. One of the salient features of the Hostel is its care for students."
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textAlignment="inherit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+</RelativeLayout>

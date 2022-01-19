@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OutpassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameO"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_classo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class/Year/Branch"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/nameO" />
+
+    <Spinner
+        android:id="@+id/sp_classo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/stream"
+        android:layout_below="@+id/tv_classo" />
+
+    <Spinner
+        android:id="@+id/sp_yearo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/year"
+       android:layout_below="@+id/tv_classo"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/sp_classo"/>
+
+    <Spinner
+        android:id="@+id/sp_brancho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/branch"
+       android:layout_below="@+id/tv_classo"
+        android:layout_toRightOf="@+id/sp_yearo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/sp_classo"
+        android:hint="USN"
+        android:id="@+id/usn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostel_roomo"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/usn"
+        android:hint="Hostel Name and Room no. format(MH1/64)"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/care_taker"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/hostel_roomo"
+        android:hint="Care Taker"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datel"
+        android:inputType="date"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/care_taker"
+        android:hint="Date of leaving"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dater"
+        android:inputType="date"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/datel"
+        android:hint="Date of return"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile_no"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/dater"
+        android:hint="Mobile Number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/moile_nop"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/mobile_no"
+        android:hint="Mobile Numer of Parent/Guardian"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adrs"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/moile_nop"
+        android:hint="Address of the place you venturing"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Reason"
+        android:maxLength="50"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:id="@+id/meditr"
+        android:layout_below="@+id/adrs"
+        android:scrollbars="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="submit"
+            android:id="@+id/submit_outpas"
+            android:layout_below="@+id/meditr"/>
+</RelativeLayout>
+</ScrollView>

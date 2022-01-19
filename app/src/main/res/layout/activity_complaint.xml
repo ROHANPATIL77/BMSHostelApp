@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComplaintActivity">
+
+  <EditText
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:hint="Name"
+      android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostel_room"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:hint="Hostel Name and Room no. format(MH1/64)"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phn"
+        android:inputType="phone"
+        android:layout_margin="10dp"
+        android:hint="Phnone numer"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Your Complaint limited with 50 charachters"
+        android:maxLength="50"
+        android:layout_marginLeft="2dp"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:id="@+id/medit"
+        android:scrollbars="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"/>
+<!--        android:backgroundTint="#ffffff"-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/sbmt"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>
